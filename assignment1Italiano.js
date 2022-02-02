@@ -49,7 +49,7 @@ module.exports = class ShwarmaOrder extends Order {
       case OrderState.SIZE:
         this.stateCur = OrderState.TYPES;
         this.sSize = sInput;
-        aReturn.push("What type of bun would you like - White ot Whole Wheat?");
+        aReturn.push("What type of bun would you like - White or Whole Wheat?");
         break;
       case OrderState.TYPES:
         this.stateCur = OrderState.FRIES;
